@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Them">
+    <TextView
+        android:id="@+id/txt_title"
+        android:textSize="20dp"
+        android:textColor="#bf0606"
+        android:gravity="center"
+        android:text="Thêm Món Ăn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:background="@drawable/border"
+        android:textColor="#050505"
+        android:hint="Nhập tên món ăn"
+        android:id="@+id/edt_ghi"
+        android:layout_below="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/edt_gia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/edt_ghi"
+        android:background="@drawable/border"
+        android:hint="Giá"
+        android:textColor="#050505"
+        android:textSize="15dp" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/edt_gia"
+        android:id="@+id/btn_them"
+        android:text="Thêm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_toRightOf="@id/btn_them"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/edt_gia"
+        android:id="@+id/btn_huy"
+        android:text="Hủy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

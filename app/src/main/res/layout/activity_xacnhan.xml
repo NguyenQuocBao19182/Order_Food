@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.xacnhan">
+<TextView
+    android:id="@+id/textview_title"
+    android:textColor="#101010"
+    android:gravity="center"
+    android:textSize="30dp"
+    android:text="Xac Nhan Mon An"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recyclerview_2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:id="@+id/button_xacnhan1"
+        android:text="Xác nhận"
+        android:textColor="#0e0e0e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

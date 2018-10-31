@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Login">
+<TextView
+    android:textStyle="bold"
+    android:background="#6a6a6c"
+    android:gravity="center"
+    android:textColor="#f39"
+    android:id="@+id/text_view_login"
+    android:text="ĐĂNG NHẬP"
+    android:textSize="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" />
+   
+    <TextView
+        android:id="@+id/text_view_user"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#6a6a6c"
+        android:textColor="#f39"
+        android:textSize="20dp"
+        android:text="Tài Khoản"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text_view_login"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <EditText
+
+        android:id="@+id/edit_text_user"
+        android:textColorHint="#f39"
+        android:hint="Nhập tài khoản"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text_view_user"
+        android:background="#6a6a6c"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/text_view_pass"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#6a6a6c"
+        android:textColor="#f39"
+        android:textSize="20dp"
+        android:text="Mật Khẩu"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edit_text_user"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <EditText
+        android:id="@+id/edit_text_pass"
+        android:textColorHint="#f39"
+        android:hint="Nhập mật khẩu"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text_view_pass"
+        android:background="#6a6a6c"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <Button
+        android:id="@+id/button_login"
+        android:textStyle="bold"
+        android:textColor="#f39"
+        android:text="Đăng Nhập"
+        android:background="#6a6a6c"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edit_text_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</RelativeLayout>

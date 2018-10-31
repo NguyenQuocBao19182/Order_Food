@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FormCustomer">
+    <TextView
+        android:id="@+id/textview_chude"
+        android:textColor="#f39"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Nhập số bàn và chọn món ăn bên dưới : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textview_soban"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#101010"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textview_chude"
+        android:text="Bạn đang ngồi bàn : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Số bàn từ 1 đến 20                      "
+        android:layout_toRightOf="@+id/textview_soban"
+        android:layout_below="@+id/textview_chude"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+
+        android:textSize="10dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:id="@+id/textview_mon_order"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textview_soban"
+        android:text="Món"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_toRightOf="@+id/textview_mon_order"
+        android:textSize="10dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:id="@+id/textview_gia_order"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textview_soban"
+        android:text="Giá"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+<TextView
+    android:gravity="center"
+    android:id="@+id/textview_soluong_order"
+    android:textSize="10dp"
+    android:background="@drawable/border"
+    android:layout_toRightOf="@+id/textview_gia_order"
+    android:layout_below="@+id/textview_soban"
+    android:text="Số lượng"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="10dp"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linearlayout_2"
+            android:layout_below="@id/textview_gia_order"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+        <android.support.v7.widget.RecyclerView
+
+
+            android:id="@+id/recyclerview_1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/border"
+        android:layout_below="@id/linearlayout_2"
+        android:text="Xác Nhận Đặt Món"
+        android:id="@+id/button_xacnhan"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

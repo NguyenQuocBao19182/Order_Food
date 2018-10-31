@@ -1,0 +1,1 @@
+SELECT tenmon,gia,soluongmon,gia*soluongmon as tonggia from monan,datmon WHERE datmon.idmon=monan.idmon

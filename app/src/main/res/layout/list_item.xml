@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:textColor="#131313"
+        android:textSize="15dp"
+
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkBox_name"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+
+        android:text="Món Ăn" />
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#131313"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView_price"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/checkBox_name"
+        android:text="20000" />
+
+    <ImageView
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/textView_price"
+        android:src="@android:drawable/ic_menu_edit"
+        android:id="@+id/img_edit"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img_edit"
+        android:src="@android:drawable/ic_delete"
+        android:id="@+id/img_delete"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

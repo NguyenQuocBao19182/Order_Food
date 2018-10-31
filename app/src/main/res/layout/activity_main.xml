@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <TextView
+
+
+        android:textSize="10dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:id="@+id/textview_mon"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textview_soban"
+        android:text="Món"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_toRightOf="@+id/textview_mon"
+        android:textSize="10dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:id="@+id/textview_gia"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+
+        android:text="Giá"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_toRightOf="@+id/textview_gia"
+        android:textSize="10dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:id="@+id/textview_sophan"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+
+        android:text="Tùy Chọn"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout1"
+    android:layout_below="@+id/textview_mon"
+    android:layout_width="match_parent"
+    android:layout_height="460dp">
+ <ListView
+
+     android:id="@+id/list_view_1"
+     android:layout_below="@id/textview_gia"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+ </ListView>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
